@@ -1,33 +1,66 @@
 {
   "id": "nuestro-ultimo-verano",
   "title": "Nuestro Último Verano",
-  "description": "Módulo completo para Custom System Builder - Hoja oficial con modificadores automáticos y botones de tirada. Preparado por CapitanBlackjoker para Foundry V9.",
+  "description": "Módulo completo para Custom System Builder (CBS). Incluye hoja oficial con modificadores automáticos, botones de tirada y 6 personajes pregenerados de La Tropa. Preparado por CapitanBlackjoker.",
   "version": "1.2.0",
-  "minimumCoreVersion": "9",
-  "compatibleCoreVersion": "9",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "custom-system-builder",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.0.0",
+          "verified": "5.1.0"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "dice-so-nice",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
   "authors": [
     {
-      "name": "CapitanBlackjoker"
+      "name": "CapitanBlackjoker",
+      "url": "https://github.com/CapitanBlackjoker",
+      "github": "CapitanBlackjoker",
+      "flags": {}
     }
   ],
-  "url": "https://github.com/CapitanBlackjoker/nuestro-ultimo-verano",
-  "manifest": "https://raw.githubusercontent.com/CapitanBlackjoker/nuestro-ultimo-verano/refs/heads/main/module.json",
-  "download": "https://github.com/CapitanBlackjoker/nuestro-ultimo-verano/releases/download/v1.2.0/nuestro-ultimo-verano-v1.2.0.zip",
-  "systems": ["custom-system-builder"],
   "packs": [
     {
       "name": "nuv-reglas",
       "label": "Nuestro Último Verano - Reglas y Lore",
       "path": "packs/nuv-reglas",
-      "entity": "JournalEntry"
+      "type": "JournalEntry",
+      "system": "custom-system-builder",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
     },
     {
       "name": "nuv-pregenerados",
       "label": "Personajes Pregenerados (La Tropa)",
       "path": "packs/nuv-pregenerados",
-      "entity": "Actor",
       "type": "Actor",
-      "system": "custom-system-builder"
+      "system": "custom-system-builder",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
     }
-  ]
+  ],
+  "url": "https://github.com/CapitanBlackjoker/nuestro-ultimo-verano",
+  "manifest": "https://raw.githubusercontent.com/CapitanBlackjoker/nuestro-ultimo-verano/refs/heads/main/module.json",
+  "download": "https://github.com/CapitanBlackjoker/nuestro-ultimo-verano/releases/download/v1.2.0/nuestro-ultimo-verano-v1.2.0.zip"
 }
