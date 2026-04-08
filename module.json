@@ -3,8 +3,8 @@
   "title": "Nuestro Último Verano",
   "description": "Módulo completo para Custom System Builder - Hoja oficial con modificadores automáticos y botones de tirada. Preparado por CapitanBlackjoker para Foundry V9.",
   "version": "1.2.0",
-  "minimumCoreVersion": "11",
-  "compatibleCoreVersion": "11",
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "9",
   "authors": [
     {
       "name": "CapitanBlackjoker"
@@ -14,7 +14,7 @@
   "manifest": "https://raw.githubusercontent.com/CapitanBlackjoker/nuestro-ultimo-verano/refs/heads/main/module.json",
   "download": "https://github.com/CapitanBlackjoker/nuestro-ultimo-verano/releases/download/v1.2.0/nuestro-ultimo-verano-v1.2.0.zip",
   "systems": ["custom-system-builder"],
-  "packs":  ["custom-system-builder"]
+  "packs": [
     {
       "name": "nuv-reglas",
       "label": "Nuestro Último Verano - Reglas y Lore",
@@ -25,7 +25,9 @@
       "name": "nuv-pregenerados",
       "label": "Personajes Pregenerados (La Tropa)",
       "path": "packs/nuv-pregenerados",
-      "entity": "Actor"
+      "entity": "Actor",
+      "type": "Actor",
+      "system": "custom-system-builder"
     }
   ]
 }
