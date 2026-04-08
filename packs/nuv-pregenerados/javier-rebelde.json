@@ -1,0 +1,22 @@
+{
+  "name": "Javi el Rebelde",
+  "type": "character",
+  "system": {
+    "template": "Nuestro Último Verano - Hoja Oficial",
+    "nombre": "Javi Sánchez",
+    "clase": "Rebelde",
+    "edad": 14,
+    "jugador": "CapitanBlackjoker",
+    "fue": 13,
+    "des": 12,
+    "con": 13,
+    "int": 11,
+    "sab": 9,
+    "car": 14,
+    "pv_max": 7,
+    "pv": 7,
+    "habilidades_clase": "Ventaja en intimidar, convencer a adultos o saltarse normas.\nUna vez por sesión puede ignorar una orden de un adulto con éxito automático.",
+    "equipo": "Navaja multiusos\nChupa de cuero (demasiado grande)\nCinta de casete de rock\nSpray de pintura\n3 Duros"
+  },
+  "img": "icons/svg/mystery-man.svg"
+}
